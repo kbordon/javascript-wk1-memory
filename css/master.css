@@ -1,0 +1,17 @@
+.card {
+  height: 400px;
+  width: 300px;
+  background-image: linear-gradient(90deg, aquamarine, peachpuff);
+  border-radius: 5px;
+  border: 4px solid lightcoral;
+  box-shadow: 2px 2px 5px grey; }
+
+.board {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; }
+
+.value {
+  display: none; }
+
+/*# sourceMappingURL=master.css.map */
