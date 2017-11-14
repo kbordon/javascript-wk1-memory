@@ -5,7 +5,10 @@
   border-radius: 5px;
   border: 4px solid lightcoral;
   box-shadow: 2px 2px 5px grey;
-  margin: 10px; }
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .board {
   width: 100%;
@@ -13,6 +16,9 @@
   flex-wrap: wrap; }
 
 .value {
-  display: none; }
+  display: none;
+  font-size: 270px;
+  color: lavender;
+  font-family: papyrus; }
 
 /*# sourceMappingURL=master.css.map */
