@@ -1,11 +1,15 @@
 function Game() {
   this.cards = [];
+  this.inactive = [];
+  this.chosenValue = 0;
+  this.chosenId = 0;
   // insert code here
 }
 
 // function Card(id, value) {
 //   this.id = id;
 //   this.value = value;
+//   this.matched = false;
 // }
 
 Game.prototype.setupGame = function() {
@@ -18,5 +22,30 @@ Game.prototype.setupGame = function() {
   }
 };
 
+Game.prototype.hasFirstCard = function(value, id) {
+  if (this.chosenValue === 0) {
+    this.chosenValue = value;
+    this.chosenId = id;
+    return false;
+  } else
+  {
+    return true;
+  }
+};
 
-exports.memoryModule = Game;
+Game.prototype.checkPair = function(value, id) {
+  if (this.chosenValue === value && this.chosenId != id)
+  {
+    this.chosenValue = 0;
+    this.chosenId = 0;
+    return true;
+  }
+  else {
+    this.chosenValue = 0;
+    this.chosenId = 0;
+    return false;
+  }
+};
+
+
+exports.gameModule = Game;
