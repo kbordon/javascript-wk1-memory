@@ -4,7 +4,8 @@
   background-image: linear-gradient(90deg, aquamarine, peachpuff);
   border-radius: 5px;
   border: 4px solid lightcoral;
-  box-shadow: 2px 2px 5px grey; }
+  box-shadow: 2px 2px 5px grey;
+  margin: 10px; }
 
 .board {
   width: 100%;
